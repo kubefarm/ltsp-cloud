@@ -1,4 +1,4 @@
-ltsp (19.11-1) unstable; urgency=low
+ltsp-cloud (19.11-1) unstable; urgency=low
 
   * Prefer external ltsp-binaries package, fall back to ipxe (#49)
   * Don't exclude /snap (#63)
@@ -13,7 +13,7 @@ ltsp (19.11-1) unstable; urgency=low
 
  -- Alkis Georgopoulos <alkisg@gmail.com>  Mon, 11 Nov 2019 09:52:19 +0200
 
-ltsp (19.10-1) experimental; urgency=medium
+ltsp-cloud (19.10-1) experimental; urgency=medium
 
   [ Alkis Georgopoulos ]
   * Correct typo, x64_32 => x86_32
@@ -54,7 +54,7 @@ ltsp (19.10-1) experimental; urgency=medium
 
  -- Vagrant Cascadian <vagrant@debian.org>  Sat, 19 Oct 2019 13:23:20 -0700
 
-ltsp (19.09-1) unstable; urgency=low
+ltsp-cloud (19.09-1) unstable; urgency=low
 
   * Customize ltsp.ipxe from ltsp.conf parameters (#14)
   * Introduce ltsp service, enable NAT, disable flow control (#13)
@@ -66,7 +66,7 @@ ltsp (19.09-1) unstable; urgency=low
 
  -- Alkis Georgopoulos <alkisg@gmail.com>  Mon, 02 Sep 2019 20:46:26 +0300
 
-ltsp (19.08-1) unstable; urgency=low
+ltsp-cloud (19.08-1) unstable; urgency=low
 
   * Import the new LTSP codebase from https://github.com/eellak/gsoc2019-ltsp.
     With many thanks to GSoC, ellak.gr and the mentors!

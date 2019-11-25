@@ -1,17 +1,17 @@
-Source: ltsp
+Source: ltsp-cloud
 Section: misc
 Priority: optional
 Maintainer: Debian LTSP Maintainers <team+ltsp@tracker.debian.org>
-Uploaders: Vagrant Cascadian <vagrant@debian.org>, Alkis Georgopoulos <alkisg@gmail.com>
+Uploaders: Vagrant Cascadian <vagrant@debian.org>, Alkis Georgopoulos <alkisg@gmail.com>, Andrei Kvapil <kvapss@gmail.com>
 Build-Depends: debhelper (>= 10),
   ronn | ruby-ronn (<< 0.7.3-5.1) | go-md2man,
 Standards-Version: 4.4.1
-Vcs-Git: https://github.com/ltsp/ltsp.git
-Vcs-Browser: https://github.com/ltsp/ltsp/
+Vcs-Git: https://github.com/ltsp/staging.git
+Vcs-Browser: https://github.com/ltsp/staging/
 Homepage: https://ltsp.org
 Rules-Requires-Root: no
 
-Package: ltsp
+Package: ltsp-cloud
 # Try to keep dependencies to what's there in plain `debootstrap`,
 # except for: busybox, sshfs
 Depends: ${misc:Depends},
@@ -29,8 +29,10 @@ Suggests: dnsmasq,
   nfs-kernel-server,
   openssh-server,
   squashfs-tools,
+Replaces: ltsp
+Conflicts: ltsp
 Architecture: all
-Description: Linux Terminal Server Project
+Description: Linux Terminal Server Project (enhanced with cloud-native features)
  Make an installation able to netboot as an LTSP client.
  For LTSP servers, also install the suggested packages (dnsmasq etc).
  .
