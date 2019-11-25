@@ -1,3 +1,17 @@
+ltsp-cloud (19.11.2-1) unstable; urgency=low
+
+  * Show applets in ltsp --help (#80)
+  * Introduce OMIT_FUNCTIONS parameter (#84)
+  * Introduce IMAGE_TO_RAM parameter (#86)
+  * Introduce IN_PLACE parameter (#85)
+  * Introduce --in-place option (#89)
+  * Allow download rootfs image over HTTP (#90)
+  * Introduce ltsp-http (#91)
+  * Introduce --http --http-image options (#92)
+  * Introduce ganesha-nfs support (#88)
+
+ -- Andrei Kvapil <kvapss@gmail.com>  Mon, 25 Nov 2019 08:22:32 +0100
+
 ltsp-cloud (19.11-1) unstable; urgency=low
 
   * Prefer external ltsp-binaries package, fall back to ipxe (#49)
