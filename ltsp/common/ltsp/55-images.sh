@@ -342,8 +342,10 @@ set_readahead() {
     mpoint=$1
     if [ -n "$mpoint" ]; then
         devs=$(rw awk '$5 =="'"$mpoint"'" { print $3 }' </proc/self/mountinfo)
-    else
+    elif [ -f /proc/fs/nfsfs/volumes ]; then
         devs=$(rw awk '/^v[0-9]/ { print $4 }' </proc/fs/nfsfs/volumes)
+    else
+        return 0
     fi
     for dev in $devs; do
         for rakf in \
